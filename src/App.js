@@ -37,7 +37,7 @@ function App() {
 
       </section>
     </main>
-    <img src="assets/moon_and_stars.jpg" className='moon-logo'/>
+    <img src={require('./moon_and_stars.jpg')} className='moon-logo'/>
     </>
   );
 }
