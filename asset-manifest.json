@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/jp-en-dictionary/static/css/main.ef9bd5af.css",
-    "main.js": "/jp-en-dictionary/static/js/main.c7b3e5e2.js",
+    "main.js": "/jp-en-dictionary/static/js/main.a739d028.js",
+    "static/media/kibunenight.jpg": "/jp-en-dictionary/static/media/kibunenight.b8295abd76b744effce6.jpg",
+    "static/media/moon_and_stars.jpg": "/jp-en-dictionary/static/media/moon_and_stars.59bacbca157a06b090a7.jpg",
     "index.html": "/jp-en-dictionary/index.html",
     "main.ef9bd5af.css.map": "/jp-en-dictionary/static/css/main.ef9bd5af.css.map",
-    "main.c7b3e5e2.js.map": "/jp-en-dictionary/static/js/main.c7b3e5e2.js.map"
+    "main.a739d028.js.map": "/jp-en-dictionary/static/js/main.a739d028.js.map"
   },
   "entrypoints": [
     "static/css/main.ef9bd5af.css",
-    "static/js/main.c7b3e5e2.js"
+    "static/js/main.a739d028.js"
   ]
 }
