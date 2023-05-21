@@ -29,7 +29,6 @@
 }
 
 .grammar-guide {
-    flex: 2;
     display: flex;
     border-radius: 2rem;
     flex-direction: column;
@@ -42,7 +41,6 @@
     text-align: center;
     justify-content: center;
     margin-top: 2em;
-    flex: 1;
     color: #426696;
     font-weight: 600;
     font-size: 2rem;
@@ -54,3 +52,125 @@
 }
 
 
+.grammar-page{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    min-height: 50%;
+}
+
+.grammar-list-container{
+    flex: 1; 
+    flex-direction: row;
+}
+
+.grammar-list {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    overflow: scroll;
+    flex: 1;
+    flex-direction: row;
+}
+
+
+.grammar-list::-webkit-scrollbar {
+    background-color: #33333300;
+}
+
+.grammar-list::-webkit-scrollbar-thumb{
+    background-color: #73dcdc;
+    border-radius: 2em;
+}
+
+.grammar-list-item {
+    min-width: 40vw;
+    padding: 1em;
+}
+
+.grammar-guide {
+    flex: 2;
+    display: flex;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 60vh;
+    
+}
+
+.grammar-list-header{
+    color: #426696;
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 0.8;
+    margin-top: 1em;
+}
+
+.grammar-guide-header, .grammar-guide-body {
+    color: #465974;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.grammar-guide-body {
+    padding-right: 2em;
+    min-height: 50%;
+}
+
+.grammar-list-container::-webkit-scrollbar {
+    background-color: #33333300;
+  }
+  
+.grammar-list::-webkit-scrollbar-thumb{
+    background-color: #73dcdc;
+    border-radius: 2em;
+}
+
+.grammar-list::-webkit-scrollbar-corner { 
+    background: rgba(0,0,0,0.0); 
+}
+
+@media only screen and (min-width: 550px) {
+    .grammar-page{
+        flex-direction: row;
+    }
+    .grammar-guide-header{
+        padding-top: 2rem;
+    }
+
+    .grammar-guide-header, .grammar-guide-body {
+        color: #465974;
+        font-weight: 500;
+        opacity: 0.8;
+        margin-bottom: 3rem;
+        padding-left: 3rem;
+    }
+
+    .grammar-list-container{
+        flex: 1; 
+        flex-direction: column;
+    }
+
+    .grammar-list {
+        flex: 1;
+        max-height: 60vh;
+        direction: rtl;
+    }
+
+    .grammar-list {
+        display: block;
+        list-style-type: none;
+        text-align: center;
+        overflow: scroll;
+        flex: 1;
+        max-height: 60vh;
+        flex-direction: row;
+    }
+
+    .grammar-list-item {
+        min-width: 10vw;
+        padding: 1em;
+    }
+}

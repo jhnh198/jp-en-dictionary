@@ -12,7 +12,6 @@ export default function LessonsPage(){
         setLesson(lesson);
     }
 
-
     return (
         <>            
             <div className='lesson-page'>

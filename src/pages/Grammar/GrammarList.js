@@ -6,7 +6,7 @@ export default function GrammarList({ data, getGuideFromList }) {
             <h1 className='grammar-list-header'>Grammar Guides</h1>
             <ul className='grammar-list'>
                 {data.map((item) => (
-                    <li onClick={() => getGuideFromList(item)} key={item.id}> {item.title}</li>
+                    <li className="grammar-list-item" onClick={() => getGuideFromList(item)} key={item.id}> {item.title}</li>
                 ))}
             </ul>
         </div>

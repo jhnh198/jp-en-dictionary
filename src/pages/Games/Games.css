@@ -1,6 +1,6 @@
 .games-page-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .games-list-container {
@@ -38,11 +38,12 @@
 .game-question {
     padding: 1em;
     background: linear-gradient(to left top, rgba(255,255,255, 0.2), rgba(255,255,255, 0.9));
-    width: 20%;
+    width: 10%;
     border-radius: 2em;
     justify-content: center;
     display: flex;
     margin: 0 auto;
+    min-width: fit-content;
 }
 
 .game-score{
@@ -89,4 +90,12 @@
     display: flex;
     margin: 0 auto;
     padding: 3em;
+}
+
+@media only screen and (min-width: 600px) {
+    .games-page-container {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
