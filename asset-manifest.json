@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jp-en-dictionary/static/css/main.ef9bd5af.css",
+    "main.js": "/jp-en-dictionary/static/js/main.c7b3e5e2.js",
+    "index.html": "/jp-en-dictionary/index.html",
+    "main.ef9bd5af.css.map": "/jp-en-dictionary/static/css/main.ef9bd5af.css.map",
+    "main.c7b3e5e2.js.map": "/jp-en-dictionary/static/js/main.c7b3e5e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef9bd5af.css",
+    "static/js/main.c7b3e5e2.js"
+  ]
+}
