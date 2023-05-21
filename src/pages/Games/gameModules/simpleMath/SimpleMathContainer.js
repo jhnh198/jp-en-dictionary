@@ -22,13 +22,10 @@ export default function SimpleMathContainer(){
     const submitAnswer = (answer) => {
         const a = parseInt(answer);
         let s = score;
-        console.log(answer, numberOne, numberTwo);
-        console.log(a === numberOne + numberTwo);
         if(a === numberOne + numberTwo) {
             s += 1;
             setScore(s);
         }
-        console.log(score);
         setNumberOne(Math.floor(Math.random() * 10));
         setNumberTwo(Math.floor(Math.random() * 10));
         setAnswer('');
@@ -39,6 +36,12 @@ export default function SimpleMathContainer(){
         return kanjiNumbers[number];
     }
 
+    const onKeyDown = (event) => {
+        if(event.key === 'Enter'){
+            submitAnswer(answer);
+        }
+    }
+
     {/*        
         input and submit button
         input gets number input
@@ -46,19 +49,23 @@ export default function SimpleMathContainer(){
     */}
     
     return (
-        <>
-            <p> {`${convertToKanjiNumbers(numberOne)} + ${convertToKanjiNumbers(numberTwo)}`} </p>
-            <br/>
-            <p>{`Score: ${score}`}</p>
-            <input
-                type='text'
-                id='answer'
-                name='answer'
-                onChange={handleChange}
-                value={answer}
-                autoComplete='off'
-            />
-            <button onClick={handleClick}>Submit Answer</button>
-        </>
+        <div className='game-container'>
+            <h1 className='game-header'> Simple Math </h1>
+            <p className='game-question'> {`${convertToKanjiNumbers(numberOne)} + ${convertToKanjiNumbers(numberTwo)}`} </p>
+            <p className='game-score'>{`Score: ${score}`}</p>
+            <div className='game-submit'>
+                <input
+                    className='game-input'
+                    type='input'
+                    id='answer'
+                    name='answer'
+                    onChange={handleChange}
+                    onKeyDown={onKeyDown}
+                    value={answer}
+                    autoComplete='off'
+                />
+                <button type='submit' className='game-submit-button' onClick={handleClick}>Submit Answer</button>
+            </div>
+        </div>
     )
 }

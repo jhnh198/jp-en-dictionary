@@ -1,11 +1,12 @@
 import GamesList from "./GamesList"
+import { Outlet } from "react-router-dom";
 
 export default function GamesPage(){
 
     return (
-        <>
-            <h1>Games for Learning and Practicing Japanese</h1>
+        <div className="games-page-container">
             <GamesList />
-        </>
+            <Outlet/>
+        </div>
     )
 }

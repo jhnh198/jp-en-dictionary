@@ -1,0 +1,74 @@
+
+.lesson-page{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lesson-list-container{
+    flex: 1; 
+    flex-direction: column;
+}
+
+.lesson-list {
+    list-style-type: none;
+    text-align: center;
+    overflow-y: scroll;
+    flex: 1;
+    max-height: 60vh;
+    direction: rtl;
+}
+
+.lesson-list::-webkit-scrollbar {
+    background-color: #33333300;
+}
+
+.lesson-list::-webkit-scrollbar-thumb{
+    background-color: #73dcdc;
+    border-radius: 2em;
+}
+
+.lesson-list-item {
+    padding-top: 1rem;
+    margin-left: 2em;
+}
+
+.lesson-plan {
+    flex: 2;
+    display: flex;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 50%;
+    
+}
+
+.lesson-list-header{
+    color: #426696;
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 0.8;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.lesson-plan-header, .lesson-plan-body {
+    color: #465974;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    padding-left: 3rem;
+}
+
+.lesson-plan-header{
+    padding-top: 2rem;
+}
+
+.lesson-list-container::-webkit-scrollbar {
+    background-color: #33333300;
+  }
+  
+.lesson-list::-webkit-scrollbar-thumb{
+    background-color: #73dcdc;
+    border-radius: 2em;
+  }
+  

@@ -1,0 +1,92 @@
+.games-page-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.games-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.game-link{
+    padding: 2em;
+    text-decoration: none;
+    color: #0c1f3f;
+}
+
+.games-list-header{
+    font-weight: 600;
+    opacity: 0.8;
+    margin-left: 2em;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.game-header{
+    color: #465974;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    margin-top: 2em;
+    justify-content: center;
+    text-align: center;
+}
+
+.game-question {
+    padding: 1em;
+    background: linear-gradient(to left top, rgba(255,255,255, 0.2), rgba(255,255,255, 0.9));
+    width: 20%;
+    border-radius: 2em;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.game-score{
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.game-container {
+    flex: 2;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-input{
+    font-size: 1em;
+    padding: 0.8em;
+    margin: 1em;
+    text-align: center;
+    float: none;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    background-color: white;
+    background: linear-gradient(to left top, rgba(255,255,255, 0.2), rgba(255,255,255, 0.9));
+}
+
+.game-input:focus{
+    border: none;
+}
+
+.game-submit-button {
+    background: linear-gradient(to left top, rgba(255,255,255, 0.2), rgba(255,255,255, 0.9));
+    padding: 0.8em;
+    border-radius: 2em;
+    border: none;
+    color: #0c1f3f;
+    font-family: 'Poppins'
+}
+
+.game-submit{
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 3em;
+}

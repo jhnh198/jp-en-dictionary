@@ -1,8 +1,7 @@
-Set up word list
-search working
+
 onclick to populate card
 Set up word card
-represents data from JSON array, could query it externally from a large set later. Jsut get it working now
+represents data from JSON array, could query it externally from a large set later. Just get it working now
 
 Set up home page nav
 Words, Grammar Guides, Problem Modules

@@ -4,7 +4,7 @@ import Home  from './pages/Home.js'
 import NotFound from './pages/NotFound'
 import GamesPage from './pages/Games/GamesPage';
 import GrammarPage from './pages/Grammar/GrammarPage'
-import LessonsPage from './pages/Lessons/LessonsPage'
+import LessonsPage from './pages/Lesson/LessonPage'
 import { WordPage } from './pages/Word/WordPage';
 import SimpleMathContainer from './pages/Games/gameModules/simpleMath/SimpleMathContainer';
 import FlashCardContainer from './pages/Games/gameModules/flashCards/FlashCardContainer';
@@ -13,13 +13,16 @@ function App() {
     const location = useLocation();
   return (
     <>
-        <nav>
-            <NavLink to="/"> Home </NavLink>
-            <NavLink to="/lessons"> Lessons </NavLink>
-            <NavLink to="/words"> Words </NavLink>
-            <NavLink to="/grammar"> Grammar </NavLink>
-            <NavLink to="/games"> Games </NavLink>
+    <main>
+      <section className="app-main-section">
+        <nav className="navbar">
+            <NavLink className="navlink" to="/"> Home </NavLink>
+            <NavLink className="navlink" to="/lessons"> Lessons </NavLink>
+            <NavLink className="navlink" to="/words"> Words </NavLink>
+            <NavLink className="navlink" to="/grammar"> Grammar </NavLink>
+            <NavLink className="navlink" to="/games"> Games </NavLink>
         </nav>
+        <section className='app-content-section'>
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/lessons" element={<LessonsPage />}/>
@@ -29,9 +32,13 @@ function App() {
               <Route path="/games/SimpleMath" element={<SimpleMathContainer/>} />
               <Route path="/games/FlashCards" element={<FlashCardContainer />} />
             </Route>
-
             <Route path="*" element={<NotFound/>}/>
         </Routes>
+        </section>
+
+      </section>
+    </main>
+    <img src="assets/moon_and_stars.jpg" className='moon-logo'/>
     </>
   );
 }

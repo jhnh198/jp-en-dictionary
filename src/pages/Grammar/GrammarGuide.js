@@ -1,11 +1,15 @@
+import './Grammar.css'
+
 export default function GrammarGuide({data}){
     return (
         <>
-            <h1>{data.title}</h1>
+            <div className='grammar-guide'> 
+                <h1 className='grammar-guide-header'>{data.title}</h1>
 
-            <p>
-                {data.body}             
-            </p>
+                <p className='grammar-guide-body'>
+                    {data.body}             
+                </p>
+            </div>
         </>
     )
 }

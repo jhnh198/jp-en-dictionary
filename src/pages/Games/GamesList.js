@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { NavLink, Outlet } from "react-router-dom";
-import SimpleMathContainer from "./gameModules/simpleMath/SimpleMathContainer";
+import './Games.css'
 
 export default function GamesList(){
     const [games, setGames] = useState([]);
@@ -8,11 +8,10 @@ export default function GamesList(){
 
 
     return (
-        <>
-            <h1>Games List</h1>
-            <NavLink to="/games/SimpleMath"> Simple Math </NavLink>
-            <NavLink to="/games/FlashCards"> Flash Cards </NavLink>
-            <Outlet />
-        </>
+        <div className="games-list-container">
+            <h1 className="games-list-header">Games for Learning and Practicing Japanese</h1>
+            <NavLink className='game-link' to="/games/SimpleMath"> Simple Math </NavLink>
+            <NavLink className='game-link' to="/games/FlashCards"> Flash Cards </NavLink>
+        </div>
     )
 }

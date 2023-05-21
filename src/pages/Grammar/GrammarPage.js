@@ -2,6 +2,7 @@ import GrammarGuide from './GrammarGuide'
 import GrammarList from './GrammarList'
 import { Guides } from './guides/guides';
 import { useState } from 'react';
+import './Grammar.css'
 
 export default function GrammarPage(){
     const data = Guides;
@@ -14,9 +15,11 @@ export default function GrammarPage(){
 
     return (
         <>
-            <h1>Grammar Guides</h1>
-            <GrammarList  getGuideFromList={getGuideFromList} data={data}/>
-            <GrammarGuide data={guide}/>
+            <div className='grammar-page'>
+                <GrammarList  getGuideFromList={getGuideFromList} data={data}/>
+                <GrammarGuide data={guide}/>
+            </div>
+
         </>
     )
 }

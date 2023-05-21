@@ -1,0 +1,56 @@
+.grammar-page{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.grammar-list{
+    list-style-type: none;
+    text-align: center;
+    overflow-y: scroll;
+    overflow: hidden;
+    padding: 3em;
+    flex: 1;
+}
+
+.grammar-list-container {
+    flex: 1; 
+    flex-direction: column;
+}
+
+.grammar-list-header {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4em;
+    flex: 1;
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.grammar-guide {
+    flex: 2;
+    display: flex;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 50%;
+}
+
+.grammar-guide-header{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2em;
+    flex: 1;
+    color: #426696;
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.grammar-guide-body{
+    padding: 2em;
+}
+
+

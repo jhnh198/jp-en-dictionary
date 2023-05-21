@@ -1,3 +1,4 @@
+import "./WordPage.css"
 import { useParams } from 'react-router-dom';
 
 function WordCard({data}){
@@ -5,14 +6,19 @@ function WordCard({data}){
 
     return (
         <div className="word-card">
-            <h1>{data.primary_meaning}</h1>
-            <p>Type: {data.type}</p>
-            <p>Kanji: {data.kanji}</p>
-            <p>Hiragana: {data.hiragana}</p>
-            <p>Romaji: {data.romaji}</p>
-            <p>Kun'yomi: {data.kunyomi}</p>
-            <p>On'yomi: {data.onyomi}</p>
-            <p>Example Sentence: {data.example}</p>
+            <h1 className="word-card-header">{data.primary_meaning}</h1>
+
+            <div className="word-card-content">
+                <div className="card-col-1">
+                    <p>Kanji: {data.kanji}</p>
+                    <p>Hiragana: {data.hiragana}</p>
+                    <p>Example Sentence: {data.example}</p>
+                </div>
+                <div className="card-col-2">
+                    <p>Type: {data.type}</p>
+                    <p>Romaji: {data.romaji}</p>
+                </div>    
+            </div>
         </div>
     )   
 }
