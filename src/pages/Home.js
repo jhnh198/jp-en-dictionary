@@ -17,7 +17,7 @@ export default function Home(){
             </div>
 
             <div className='image-container'>
-            <img className="content-image" src="assets/kibunenight.jpg"></img>
+            <img className="content-image" src="assets/kibunenight.jpg" alt="street at night in Kibune, Japan"></img>
             </div>
         </div>
 

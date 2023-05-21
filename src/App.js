@@ -1,5 +1,5 @@
 import './App.css';
-import {Routes, Route, Link, NavLink, useLocation} from 'react-router-dom'
+import {Routes, Route, NavLink} from 'react-router-dom'
 import Home  from './pages/Home.js'
 import NotFound from './pages/NotFound'
 import GamesPage from './pages/Games/GamesPage';
@@ -10,7 +10,6 @@ import SimpleMathContainer from './pages/Games/gameModules/simpleMath/SimpleMath
 import FlashCardContainer from './pages/Games/gameModules/flashCards/FlashCardContainer';
 
 function App() {
-    const location = useLocation();
   return (
     <>
     <main>
